@@ -16,20 +16,27 @@ body {
 }
 
 .media-logos-border {
-    width: 2em;
-    height: 2em;
+    width: 2.5em;
+    height: 2.5em;
     border-radius: 50%;
+    border: 1px solid hsl(223, 100%, 88%);
     display: flex;
     justify-content: center;
     align-items: center;
     margin: auto .75em;
-    color: hsl(223, 100%, 88%);
+    color: hsl(223, 87%, 63%);
+}
+
+.media-logos-border:hover {
+    background-color: hsl(223, 87%, 63%);
+    color: white;
 }
 
 .media-logos {
-    width: 1.25em;
-    height: 1.25em;
+    width: 1.75em;
+    height: 1.75em;
 }
+
 
 #page-title{
     display: flex;
@@ -55,7 +62,7 @@ body {
 #email-form {
     margin: 0 auto;
     width: 27vw;
-    height: 4vh;
+    height: 4.5vh;
     display: flex;
 }
 
