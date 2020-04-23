@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+/* 
+* {
+    box-sizing: border-box;
+    border: 1px solid black;
+} */
+
+body {
+    font-family: 'Libre Franklin', sans-serif;
+    text-align: center;
+}
+
+#social-logos {
+    display: flex;
+    justify-content: center;
+}
+
+.media-logos-border {
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto .75em;
+    color: hsl(223, 100%, 88%);
+}
+
+.media-logos {
+    width: 1.25em;
+    height: 1.25em;
+}
+
+#page-title{
+    display: flex;
+    justify-content: center;
+}
+
+.title-box {
+    width: 30vw;
+}
+
+#non-bold-title {
+
+    font-size: 2.75em;
+    font-weight: 300;
+    margin-bottom: 0;
+}
+
+#caption-text {
+    margin-top: 1.5vh;
+    font-size: 1.25em;
+}
+
+#email-form {
+    margin: 0 auto;
+    width: 27vw;
+    height: 4vh;
+    display: flex;
+}
+
+#email-text {
+    width: 70%;
+    margin-right: 5%;
+    border: 1px solid hsl(223, 100%, 88%);
+    border-radius: 20px;
+    padding-left: 2vw;
+}
+
+#email-text:focus {
+    outline: none;
+}
+
+#email-submit {
+    width: 25%;
+    border-radius: 20px;
+    background-color: hsl(223, 87%, 63%);
+    color: white;
+    border: none;
+    box-shadow: 1px 5px 15px 3px lightgrey;
+}
+
+#email-submit:focus {
+    outline: none;
+}
+
+#big-image {
+    margin: 5vh 0;
+    width: 32vw;
+    height: auto;
+}
+
+footer {
+    font-size: .75em;
+    margin: 7vh;
+    line-height: 1vh;
+}
