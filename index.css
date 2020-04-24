@@ -1,42 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
-/* 
+ 
 * {
     box-sizing: border-box;
-    border: 1px solid black;
-} */
+    /* border: 1px solid black; */
+} 
 
 body {
     font-family: 'Libre Franklin', sans-serif;
     text-align: center;
 }
 
-#social-logos {
-    display: flex;
-    justify-content: center;
+#ping-logo {
+    width: 7%;
+    height: auto;
 }
-
-.media-logos-border {
-    width: 2.5em;
-    height: 2.5em;
-    border-radius: 50%;
-    border: 1px solid hsl(223, 100%, 88%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto .75em;
-    color: hsl(223, 87%, 63%);
-}
-
-.media-logos-border:hover {
-    background-color: hsl(223, 87%, 63%);
-    color: white;
-}
-
-.media-logos {
-    width: 1.75em;
-    height: 1.75em;
-}
-
 
 #page-title{
     display: flex;
@@ -48,15 +25,14 @@ body {
 }
 
 #non-bold-title {
-
-    font-size: 2.75em;
+    font-size: 2.15vw;
     font-weight: 300;
     margin-bottom: 0;
 }
 
 #caption-text {
     margin-top: 1.5vh;
-    font-size: 1.25em;
+    font-size: 1.3vw;
 }
 
 #email-form {
@@ -72,6 +48,11 @@ body {
     border: 1px solid hsl(223, 100%, 88%);
     border-radius: 20px;
     padding-left: 2vw;
+    color: hsl(223, 100%, 88%);
+}
+
+#email-text::placeholder {
+    color: hsl(223, 100%, 88%);
 }
 
 #email-text:focus {
@@ -85,6 +66,7 @@ body {
     color: white;
     border: none;
     box-shadow: 1px 5px 15px 3px lightgrey;
+    font-size: 70%;
 }
 
 #email-submit:focus {
@@ -97,8 +79,128 @@ body {
     height: auto;
 }
 
+#social-logos {
+    display: flex;
+    justify-content: center;
+}
+
+.media-logos-border {
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 50%;
+    border: 1px solid hsl(223, 100%, 88%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto .5em;
+    color: hsl(223, 87%, 63%) !important;
+}
+
+a {
+    color: inherit;
+}
+
+.media-logos-border:hover {
+    background-color: hsl(223, 87%, 63%);
+    color: white !important;
+}
+
+.media-logos {
+    width: 1.75em;
+    height: 1.75em;
+}
+
 footer {
     font-size: .75em;
     margin: 7vh;
     line-height: 1vh;
+}
+
+@media only screen and (max-width: 600px) {
+    * {
+        box-sizing: border-box;
+        /* border: 1px solid black; */
+    }
+
+    /* LOGO AND HEADING */
+
+    #ping-logo {
+        height: 2.5vh;
+        width: auto;
+    }
+
+    .title-box {
+        width: 100%;
+    }
+    
+    #non-bold-title {
+        font-size: 3.5vh;
+        font-weight: 300;
+        margin-bottom: 0;
+    }
+
+    #caption-text {
+        margin-top: 1.5vh;
+        font-size: 4vw;
+    }
+
+    /* EMAIL FORM */
+    #email-signup {
+        height: 10vh;
+
+    }
+
+    #email-form {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 70%;
+    }
+    
+    #email-text{
+        width: 100%;
+        height: 45%;
+        margin-bottom: 2.5%;
+        font-size: .75em;
+        padding-left: 5vw;
+    }
+
+    #email-submit{
+        width: 100%;
+        height: 45%;
+        font-size: .75em;
+    }
+
+    /* MAIN IMAGE */
+
+    #big-image {
+        height: 20vh;
+        width: auto;
+        margin-bottom: 10vh;
+    }
+
+    /* SOCIAL MEDIA BTN's */
+
+    .media-logos-border {
+        width: 2.25em;
+        height: 2.25em;
+    }
+    
+    .media-logos {
+        width: 1.5em;
+        height: 1.5em;
+    }
+
+    /* FOOTER TEXT */
+
+    footer {
+        width: 90%;
+        margin: 2.5vh auto;
+        font-size: .5em;
+    }
+
+    .attribution {
+        line-height: 2.25vh;
+    }
+
 }
